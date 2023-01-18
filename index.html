@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="vending-machine">
+      <div id="display">
+        <p>Willkommen bei unsererm Kaffeeautomaten</p>
+        <p>Bitte werfen Sie 0,50€, 1€ oder 2€ ein</p>
+        <p id="inserted-money"></p>
+        <p class="change"></p>
+      </div>
+      <img id="coffee-cup" src="./Kaffeebecher.png" alt="Coffee Cup">
+      <div id="coffee-options">
+        <button id="coffee-1" onclick="selectCoffee(1)">Espresso - € 1,50</button>
+        <button id="coffee-2" onclick="selectCoffee(2)">Café Crema - € 2,00</button>
+        <button id="coffee-3" onclick="selectCoffee(3)">Cappuccino - € 2,50</button>
+        <button id="coffee-4" onclick="selectCoffee(4)">Cafélatte - € 3,00</button>
+        <button id="coffee-5" onclick="selectCoffee(5)">Kaffee ole - € 3,50</button>
+        <button id="coffee-6" onclick="selectCoffee(6)">Kaffee - € 4,00</button>
+        <button id="coffee-7" onclick="selectCoffee(7)">Tee - € 4,50</button>
+        <button id="coffee-8" onclick="selectCoffee(8)">Kakao - € 5,00</button>
+      </div>
+      <div id="money-input">
+        <button id="insert-money-0.5" onclick="insertMoney(0.5)">€ 0,50</button>
+        <button id="insert-money-1" onclick="insertMoney(1)">€ 1,00</button>
+        <button id="insert-money-2" onclick="insertMoney(2)">€ 2,00</button>
+      </div>
+      <div>
+        <button class="changeA">Auslieferung</button>
+      </div>
+      <div>
+        <button onclick="reset()">Reset</button>
+
+      </div>
+    </div>
+    <script src="solution.js"></script>
+  </body>
+</html>
